@@ -1,2 +1,3 @@
-brew 'jakeheis/repo/ice'
+tap 'jakeheis/repo'
+brew 'ice'
 
