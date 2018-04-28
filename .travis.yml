@@ -4,8 +4,8 @@ language: generic
 sudo: required
 osx_image: xcode9.3
 before_install:
-  - brew update
-  - brew bundle
+  - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew update; fi"
+  - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew bundle; fi"
 script:
   - ice build
   - ice test
