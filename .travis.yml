@@ -12,5 +12,5 @@ install:
 - eval "$(swiftenv init -)"
 - swiftenv install || true
 script:
-- swift build
-- swift test
+- ice build
+- ice test
