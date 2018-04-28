@@ -2,12 +2,13 @@ os:
 - osx
 language: generic
 sudo: required
-osx_image: xcode9
+osx_image: xcode9.3
 before_install:
-- brew bundle
+  - brew update
+  - brew bundle
 script:
-- ice build
-- ice test
+  - ice build
+  - ice test
 deploy:
   provider: releases
   api_key:
