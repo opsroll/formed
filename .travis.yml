@@ -4,7 +4,14 @@ language: generic
 sudo: required
 osx_image: xcode9
 before_install:
-  - brew bundle
+- brew bundle
 script:
-  - ice build
-  - ice test
+- ice build
+- ice test
+deploy:
+  provider: releases
+  api_key:
+    secure: TQI2PgOGX2llXc2BPdt7F/tjmyZq42ila1Cq2eXMOyAgbmBRVLIufmYBuKMhnR1tX1qzzP5z8jGre3WkUaTj4g+FYr2OYQoM9IAe0fpxJoRoi/APjLjuEzAmLLDia4ESkiFc4x3CUJv2iTQ4juwk1KcxoQKDzVCedvPf68z9m6LmLZ9ZoRNPCHGR1LPFt0xTlw43O7LlViWDRuUOtF7MKTH5AcdcDBLV+m78L/IsdAfBCOoacotpcI2xVFy2OWPetcd3ZNlm9K3qVD8Db94mBQA2FyKf/g3yd5h2xhUxB70/QtrMJdKJZPTF/ZmIG6otGc/07hI1ypQrnLGXKkKlF4nSwSkkKMYV+5XHc4YFxOek6+2Q4r3cKl27+qFwpaz2lpZ7hDIhZ9cn8/W3W33Texycz0YqU1UKQ0RU+cPQvymq1D3PfA3YFUL7gUeBFHcBsvPR55wj1ukcBnBYR8n80TZO3AXbxZRp4Vq8zkApMTJNxtGC7VVvjMf5nt9NZNAd3L8FHLoEGyxD1OyJYrdbKNroX9RH0uyhsENqeCJt8HJSfSsYOzufVcK+ZH0n+RF3mN60Nk0TUeXs7QKvIrprwWW86epYMhaESJze1VJ8CRl2lIZEoq9fThmN+oNax4Wreb8kZImhPBwS4jPZFOL6/24LlVRrbB5Z3u1gfkxvzxU=
+  file: ".build/debug/formed"
+  on:
+    repo: opsroll/formed
