@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftCLI",
+        "repositoryURL": "https://github.com/jakeheis/SwiftCLI",
+        "state": {
+          "branch": null,
+          "revision": "51ba542611878b2e64e82467b895fdf4240ec32e",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "Yaml",
+        "repositoryURL": "https://github.com/behrang/YamlSwift",
+        "state": {
+          "branch": null,
+          "revision": "978901aed4025e36ebf60c040c9000c559d7c3e0",
+          "version": "3.4.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
