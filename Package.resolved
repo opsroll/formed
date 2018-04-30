@@ -2,21 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "AWSSDKSwift",
+        "repositoryURL": "https://github.com/opsroll/aws-sdk-swift",
+        "state": {
+          "branch": null,
+          "revision": "33273fbb34c73597fc0f5f3189f7c93a9ffeb1f5",
+          "version": "1.1.6"
+        }
+      },
+      {
         "package": "AWSSDKSwiftCore",
         "repositoryURL": "https://github.com/noppoMan/aws-sdk-swift-core.git",
         "state": {
           "branch": null,
           "revision": "fcd3ea58a44b7b297713c5db541f924fb193cdd4",
           "version": "1.0.9"
-        }
-      },
-      {
-        "package": "AWSSDKSwift",
-        "repositoryURL": "https://github.com/noppoMan/AWSSDKSwift",
-        "state": {
-          "branch": null,
-          "revision": "265b8d77a31ee57618b6f2d5fbe2a81f8373f7b2",
-          "version": "1.1.5"
         }
       },
       {
@@ -84,11 +84,11 @@
       },
       {
         "package": "SwiftyJSON",
-        "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
           "branch": null,
-          "revision": "1190845cf7d25a5c8ea7653fe03dcdd39a082056",
-          "version": "16.0.2"
+          "revision": "ebfc0d7e314f15c1df02fcb198beb40624421839",
+          "version": "4.1.0"
         }
       },
       {
