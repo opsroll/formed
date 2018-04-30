@@ -7,8 +7,8 @@ before_install:
   - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew update; fi"
   - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew bundle; fi"
 script:
-  - ice build
-  - ice test
+  - swift build
+  - swift test
 deploy:
   provider: releases
   api_key:
