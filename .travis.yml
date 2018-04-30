@@ -7,8 +7,8 @@ before_install:
   - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew update; fi"
   - "if [ ${TRAVIS_OS_NAME} = 'osx' ]; then brew bundle; fi"
 script:
-  - swift build
-  - swift test
+  - travis_wait 40 swift build
+  - if [[ $OS != "macos" ]]; then swift test; fi
 deploy:
   provider: releases
   api_key:
