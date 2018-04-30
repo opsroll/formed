@@ -1,0 +1,4 @@
+module CHTTPParser {
+    umbrella "/Users/charlesgardner/Projects/formed/.build/checkouts/CHTTPParser.git-5348291456210268902/Sources/include"
+    export *
+}
